@@ -25,6 +25,7 @@ public class AngajatiLoader extends AplicantiLoader {
             angajat.setOcupatie(ocupatie);
             angajati.add(angajat);
         }
+
         input2.close();
         return angajati;
     }
