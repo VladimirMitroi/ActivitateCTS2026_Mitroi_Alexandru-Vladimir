@@ -28,6 +28,14 @@ public class Rezervare implements PrototypeRezervare {
         }
     }
 
+    public void setOra(String ora) {
+        this.ora = ora;
+    }
+
+    public void setNumarPersoane(int numarPersoane) {
+        this.numarPersoane = numarPersoane;
+    }
+
     private Rezervare(){
 
     }

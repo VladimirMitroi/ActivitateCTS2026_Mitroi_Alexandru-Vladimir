@@ -5,8 +5,13 @@ import ro.ase.cts.clase.Rezervare;
 
 public class Program {
     public static void main(String[] args) {
-        PrototypeRezervare rezervare=new Rezervare("Eu",4,"20:00","074820745");
-        PrototypeRezervare rezervare1= rezervare.copiaza();
-//        System.out.println(rezervare1.toString());
+        PrototypeRezervare rezervare = new Rezervare("Dorel", 4, "16:00", "1234567890");
+        PrototypeRezervare rezervareNoua = rezervare.copiaza();
+
+        ((Rezervare)rezervareNoua).setOra("14:00");
+        ((Rezervare)rezervareNoua).setNumarPersoane(2);
+
+        System.out.println(rezervare);
+        System.out.println(rezervareNoua);
     }
 }
