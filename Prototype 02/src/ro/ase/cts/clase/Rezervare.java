@@ -7,7 +7,7 @@ public class Rezervare implements PrototypeRezervare {
     protected String numarTelefon;
 
     public Rezervare(String numeClient, int numarPersoane, String ora, String numarTelefon) {
-        if(this.numeClient.length()>2) {
+        if(numeClient.length()>2) {
             this.numeClient = numeClient;
         }
         else {
@@ -20,7 +20,7 @@ public class Rezervare implements PrototypeRezervare {
             this.numarPersoane=2;
         }
         this.ora = ora;
-        if(this.numarTelefon.length()==10) {
+        if(numarTelefon.length()==10) {
             this.numarTelefon = numarTelefon;
         }
         else {
